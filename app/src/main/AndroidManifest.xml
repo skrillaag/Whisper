@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+WhisperWire AndroidManifest
+
+Defines core application metadata, permissions, and exported entry points.
+For a secure messaging app, the Manifest ensures that only appropriate
+activities are externally accessible and that sensitive screens remain internal.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.whisperwire.app">
+
+    <!-- Network access (required for Firebase Auth + Firestore) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="WhisperWire"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WhisperWire">
+
+    <!-- ===========================================================
+         ENTRY POINT (LAUNCHER)
+         ===========================================================
+         Publicly exported because it must be accessible from the launcher.
+    -->
+    <activity
+        android:name=".ui.auth.AuthLoginActivity"
+        android:exported="true">
+
+        <intent-filter>
+            <!-- Standard launcher entry -->
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+    </activity>
+
+    <!-- ===========================================================
+         MAIN APPLICATION SCREENS (post-login)
+         =========================================================== -->
+
+    <!-- MainActivity: hub for recent chats and navigation -->
+    <activity
+        android:name=".ui.main.MainActivity"
+        android:exported="false" />
+
+    <!-- Authentication: register new users -->
+    <activity
+        android:name=".ui.auth.AuthRegisterActivity"
+        android:exported="false" />
+
+    <!-- AddContactActivity: small utility screen for sending requests -->
+    <activity
+        android:name=".ui.contacts.AddContactActivity"
+        android:exported="false" />
+
+    <!-- Incoming requests list (private user data → not exported) -->
+    <activity
+        android:name=".ui.contacts.ContactRequestsActivity"
+        android:exported="false" />
+
+    <!-- Contacts list -->
+    <activity
+        android:name=".ui.contacts.ContactsListActivity"
+        android:exported="false" />
+
+    <!-- Chat UI screen (messages decrypted locally) -->
+    <activity
+        android:name=".ui.chat.ChatActivity"
+        android:exported="false" />
+
+    <!-- Developer panel: exposes benchmark & identity key
+         Internally accessible only for debugging in this project -->
+    <activity
+        android:name=".ui.dev.DeveloperActivity"
+        android:exported="false" />
+
+    <!-- Security verification screen (safety number fingerprint) -->
+    <activity
+        android:name=".ui.chat.ChatSecurityActivity"
+        android:exported="false" />
+
+</application>
+
+    </manifest>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutContactRequestItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/appBackground">
+
+    <!-- Sender email -->
+    <TextView
+        android:id="@+id/textFromEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="from@example.com"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Buttons row -->
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:weightSum="2">
+
+        <!-- Accept -->
+        <Button
+            android:id="@+id/buttonAccept"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Accept"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_proceed"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Reject -->
+        <Button
+            android:id="@+id/buttonReject"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Reject"
+            android:textColor="@color/colorSecondary"
+            android:background="@drawable/button_reverted"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

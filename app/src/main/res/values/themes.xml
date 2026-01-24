@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.WhisperWire" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:popupMenuStyle">@style/PopupDark</item>
+    </style>
+
+    <style name="PopupDark" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+
+</resources>

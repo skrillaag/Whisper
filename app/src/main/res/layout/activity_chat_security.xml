@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutSafetyNumber"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    android:gravity="top|center_horizontal">
+
+    <!-- Contact email -->
+    <TextView
+        android:id="@+id/textContactEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="contact@example.com"
+        android:textColor="@color/colorSecondary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Label -->
+    <TextView
+        android:id="@+id/textSafetyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Safety number"
+        android:textColor="@color/textSecondary"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Safety number value -->
+    <TextView
+        android:id="@+id/textSafetyNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:typeface="monospace" />
+
+</LinearLayout>

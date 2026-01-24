@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/appBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <!-- Contact Email -->
+        <TextView
+            android:id="@+id/textRecentChatEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email@example.com"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Message Preview -->
+        <TextView
+            android:id="@+id/textRecentChatPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last message preview"
+            android:textColor="@color/textSecondary"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <!-- Time -->
+        <TextView
+            android:id="@+id/textRecentChatTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last message time"
+            android:textColor="@color/textSecondary"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <!-- Unread Dot -->
+    <TextView
+        android:id="@+id/textRecentChatUnread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="●"
+        android:textSize="18sp"
+        android:textColor="@color/colorSecondary"
+        android:visibility="gone"
+        android:layout_marginStart="8dp" />
+
+</LinearLayout>

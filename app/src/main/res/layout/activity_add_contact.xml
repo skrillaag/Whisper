@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutAddContact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/appBackground"
+    android:gravity="top|center_horizontal">
+
+    <!-- Page title -->
+    <TextView
+        android:id="@+id/textAddContactTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Contact"
+        android:textColor="@color/accentPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Email input field -->
+    <EditText
+        android:id="@+id/editContactEmail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Contact Email"
+        android:inputType="textEmailAddress"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:textColor="@color/textSecondary"
+        android:textColorHint="@color/textSecondary"
+        android:layout_marginBottom="28dp" />
+
+    <!-- Primary action button -->
+    <Button
+        android:id="@+id/buttonSendRequest"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Send Request"
+        android:textColor="@color/textPrimary"
+        android:background="@drawable/button_proceed" />
+
+</LinearLayout>

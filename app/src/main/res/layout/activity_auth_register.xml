@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Registration screen layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/appBackground"
+    android:gravity="top|center_horizontal">
+
+    <!-- Main title -->
+    <TextView
+        android:id="@+id/textRegisterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/accentPrimary"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Email input -->
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/textSecondary"
+        android:textColorHint="@color/textSecondary"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Password input -->
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/textSecondary"
+        android:textColorHint="@color/textSecondary"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Confirm password input -->
+    <EditText
+        android:id="@+id/editConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColor="@color/textSecondary"
+        android:textColorHint="@color/textSecondary"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Register button -->
+    <Button
+        android:id="@+id/buttonFinishRegister"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Register"
+        android:textColor="@color/textPrimary"
+        android:background="@drawable/button_proceed" />
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textDevTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developer Mode"
+            android:textColor="@color/colorSecondary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="20dp" />
+
+        <!-- Identity public key section -->
+        <TextView
+            android:id="@+id/textDevIdentityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Identity public key (Base64, from Firestore):"
+            android:textColor="@color/textSecondary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textDevIdentityKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/input_field_background"
+            android:padding="12dp"
+            android:paddingBottom="16dp" />
+
+        <!-- Benchmark / self-test button -->
+        <Button
+            android:id="@+id/buttonDevRunTest"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Run Crypto Self-Test"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_proceed"
+            android:layout_marginTop="16dp" />
+
+        <!-- Results output -->
+        <TextView
+            android:id="@+id/textDevResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/textSecondary"
+            android:paddingTop="16dp" />
+    </LinearLayout>
+</ScrollView>
