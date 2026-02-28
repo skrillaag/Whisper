@@ -1,6 +1,7 @@
-WhisperWire is an Android messaging application that implements secure, end-to-end encrypted communication. All encryption is performed locally on the device using ECDH, HKDF-SHA256, and AES-GCM. Firebase is used for authentication and real-time data synchronization. This project was developed as part of the COS Senior Project Fall 2025.
+# Whisper
+Whisper is an Android messaging application that implements secure, end-to-end encrypted communication. All encryption is performed locally on the device using ECDH, HKDF-SHA256, and AES-GCM. Firebase is used for authentication and real-time data synchronization. This project was developed as part of the COS Senior Project Fall 2025.
 
-Features:
+## Features:
 - End-to-end encrypted text messaging
 - Identity keys generated and stored using Android Keystore
 - Contact requests (send, accept, reject)
@@ -11,8 +12,17 @@ Features:
 - Full account deletion with recursive Firestore cleanup
 - Developer Mode with a cryptographic benchmark
 
-``Installation``
-Requirements:
+## Security
+
+All encryption and key derivation operations are performed locally on the device.
+Firebase is used only for authentication and real-time data synchronization and does not have access to plaintext message content.
+
+Cryptographic components used:
+- ECDH (Elliptic Curve Diffie–Hellman) for key exchange
+- HKDF-SHA256 for key derivation
+- AES-GCM for authenticated encryption
+
+## Installation Requirements:
 
 Android Studio (current release)
 Android SDK (installed automatically with Android Studio)
@@ -27,7 +37,10 @@ Steps:
 5. Select the target device and run the project from Android Studio.
 6. Register a new account to begin using WhisperWire.
 
-``Contact``
+## Screenshots
+Screenshots of the application can be found in screenshots/ directory.
+
+## Contact
 For further information:
     Altangerel Dashtseren
     email: skrillaag@gmail.com
