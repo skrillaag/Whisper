@@ -50,3 +50,7 @@ Screenshots of the application can be found in screenshots/ directory.
 For further information:
     Altangerel Dashtseren
     email: skrillaag@gmail.com
+
+## License
+
+This project is licensed under the MIT License.
