@@ -40,10 +40,10 @@ Steps:
 ## Screenshots
 Screenshots of the application can be found in screenshots/ directory.
 <p align="center">
-  <img src="screenshots/add_contact.png" width="400">
-  <img src="screenshots/chat.png" width="400">
-  <img src="screenshots/dev_benchmark.png" width="400">
-  <img src="screenshots/safety_number.png" width="400">
+  <img src="screenshots/add_contact.png" width="200">
+  <img src="screenshots/chat.png" width="200">
+  <img src="screenshots/dev_benchmark.png" width="200">
+  <img src="screenshots/safety_number.png" width="200">
 </p>
 
 ## Contact
