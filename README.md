@@ -30,4 +30,4 @@ Steps:
 ``Contact``
 For further information:
     Altangerel Dashtseren
-    email: and201@aubg.edu
+    email: skrillaag@gmail.com
